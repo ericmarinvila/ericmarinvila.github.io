@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>IPOP</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -18,19 +18,20 @@
 
 <main>
     <div class="glass">
-        <h1>IPOP</h1>
+        <h1>Contacto</h1>
 
-        <h2>Proyección Profesional</h2>
-        <p>Escribe aquí tu objetivo profesional...</p>
+        <form action="https://formspree.io/f/xxxxxxx" method="POST">
+            
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
 
-        <h2>Empresas objetivo</h2>
-        <p>Empresas donde te gustaría trabajar...</p>
+            <input type="email" name="email" placeholder="Tu email" required>
 
-        <h2>Itinerario formativo</h2>
-        <p>Formación necesaria para alcanzar tus objetivos...</p>
+            <textarea name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
 
-        <h2>Plan de promoción personal</h2>
-        <p>Estrategias, objetivos personales y plan de actuación...</p>
+            <button type="submit">Enviar mensaje</button>
+
+        </form>
+
     </div>
 </main>
 
