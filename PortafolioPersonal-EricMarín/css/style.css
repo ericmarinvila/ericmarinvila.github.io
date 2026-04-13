@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(135deg, #e0e7ff, #f8fafc);
+    color: #1e293b;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+/* GLASS EFFECT */
+.glass {
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 40px auto;
+    width: 80%;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+/* TITLES */
+h1 {
+    text-align: center;
+}
+
+/* BUTTONS */
+button {
+    background: rgba(255,255,255,0.6);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* GRID DE PROYECTOS */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card a {
+    text-decoration: none;
+    font-weight: bold;
+}
