@@ -228,18 +228,29 @@ input:focus, textarea:focus {
 .doc-button {
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 18px;
+    padding: 12px 20px;
+
     border-radius: 12px;
     text-decoration: none;
 
-    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.6);
     color: #1e293b;
     font-weight: 500;
 
-    transition: all 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: all 0.25s ease;
+    cursor: pointer;
 }
 
+/* HOVER MÁS VISIBLE */
 .doc-button:hover {
-    background: rgba(255,255,255,0.9);
-    transform: translateY(-2px);
+    background: rgba(255,255,255,0.95);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* CLICK */
+.doc-button:active {
+    transform: scale(0.97);
 }
