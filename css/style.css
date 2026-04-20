@@ -196,8 +196,8 @@ input:focus, textarea:focus {
     background: rgba(255,255,255,0.35);
 
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-
-    overflow: hidden;
+    z-index: 1;
+    overflow: visible;
 }
 
 /* EFECTO HOVER */
@@ -209,7 +209,7 @@ input:focus, textarea:focus {
 /* EFECTO LUZ */
 .doc-card::before {
     content: "";
-    position: absolute;
+    position: relative;
     top: -50%;
     left: -50%;
     width: 200%;
@@ -217,6 +217,7 @@ input:focus, textarea:focus {
     background: radial-gradient(circle, rgba(255,255,255,0.4), transparent 60%);
     opacity: 0;
     transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .doc-card:hover::before {
@@ -237,7 +238,8 @@ input:focus, textarea:focus {
     font-weight: 500;
 
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-
+    position: relative;
+    z-index: 2;
     cursor: pointer;
 }
 
