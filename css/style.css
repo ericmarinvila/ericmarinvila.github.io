@@ -179,80 +179,43 @@ input:focus, textarea:focus {
     box-shadow: 0 0 0 2px rgba(99,102,241,0.3);
 }
 
-/* CONTENEDOR DOCUMENTOS */
+/* CONTENEDOR */
 .docs-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    gap: 20px;
 }
 
-/* TARJETAS */
+/* TARJETA SIMPLE */
 .doc-card {
-    position: relative;
+    display: block;
     padding: 30px;
     border-radius: 20px;
 
-    backdrop-filter: blur(20px);
+    text-decoration: none;
+    color: #1e293b;
+
+    backdrop-filter: blur(15px);
     background: rgba(255,255,255,0.35);
 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    z-index: 1;
-    overflow: visible;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
-/* EFECTO HOVER */
+/* HOVER */
 .doc-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    background: rgba(255,255,255,0.5);
 }
 
-/* EFECTO LUZ */
-.doc-card::before {
-    content: "";
-    position: relative;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.4), transparent 60%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
+/* TEXTO */
+.doc-card h2 {
+    margin-top: 0;
 }
 
-.doc-card:hover::before {
-    opacity: 1;
-}
-
-/* BOTÓN */
-.doc-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 20px;
-
-    border-radius: 12px;
-    text-decoration: none;
-
-    background: rgba(255,255,255,0.6);
-    color: #1e293b;
-    font-weight: 500;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    position: relative;
-    z-index: 2;
-    cursor: pointer;
-}
-
-/* HOVER MÁS VISIBLE */
-.doc-button:hover {
-    background: rgba(255,255,255,0.95);
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 
-        0 10px 25px rgba(0,0,0,0.2),
-        0 0 10px rgba(255,255,255,0.6);
-}
-
-/* CLICK */
-.doc-button:active {
-    transform: scale(0.97);
+.doc-card p {
+    margin-bottom: 0;
+    opacity: 0.8;
 }
