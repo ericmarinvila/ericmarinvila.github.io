@@ -1,3 +1,17 @@
+/* MODO OSCURO */
+.dark {
+    background: #0f172a;
+    color: white;
+}
+
+/* Ajustar tus cards / navbar */
+.dark .glass,
+.dark nav,
+.dark .doc-card {
+    background: rgba(30, 41, 59, 0.6);
+    color: white;
+}
+
 body {
     margin: 0;
     padding-top: 140px;
