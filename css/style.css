@@ -4,6 +4,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background: linear-gradient(135deg, #e0e7ff, #f8fafc);
     color: #1e293b;
+    text-align: center;
 }
 
 /* NAVBAR */
