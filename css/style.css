@@ -410,3 +410,23 @@ max-width: 900px;
 .socials img:hover {
     transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+    nav {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        padding: 10px;
+        gap: 8px;
+
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
