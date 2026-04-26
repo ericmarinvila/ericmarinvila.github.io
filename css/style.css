@@ -391,3 +391,22 @@ max-width: 900px;
         height: auto;
     }
 }
+
+.socials {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+/* HOVER */
+.socials img:hover {
+    transform: scale(1.2);
+}
